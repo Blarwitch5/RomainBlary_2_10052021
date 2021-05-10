@@ -1,3 +1,36 @@
 /* ################################ */
 /*           FOOTER STYLE           */
 /* ################################ */
+footer {
+  background-color: #f2f2f2;
+  padding: 2.5rem 1.25rem;
+}
+footer .footer__column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__column .footer__title {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 3.125rem;
+  margin: 0
+  ;
+}
+footer .footer__column .footer__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+footer .footer__column .footer__list .footer__list-item {
+  font-weight: normal;
+  line-height: 2.188rem;
+}
+footer .footer__column .footer__list .footer__list-item a {
+  color: #000;
+  text-decoration: none;
+  transition: .3s;
+}
+footer .footer__column .footer__list .footer__list-item a:hover {
+  color: #0065fc;
+}

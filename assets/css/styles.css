@@ -12,3 +12,21 @@ body{
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 16px;
 }
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.33%;
+}
+.col-6{
+  width: 50%;
+}
+.col-8{
+  width: 66.67%;
+}
+.col-9{
+  width: 75%;
+}
+.col-12{
+  width: 100%;
+}

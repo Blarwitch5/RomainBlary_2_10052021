@@ -29,7 +29,7 @@
     <meta name="twitter:image" content="http://www.example.com/image.jpg" />
 
     <!-- CSS -->
-    <link href="assets/css/styles.css" rel="stylesheet" type='text/css' />
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
 
     <!-- FAVICON -->
     <link
@@ -65,21 +65,30 @@
     ></script>
   </head>
 
-  <body>
+  <body class="page">
     <!-- Header -->
-    <header>
+    <header class="page__header">
       <nav class="navbar">
-        <p class="navbar__brand-logo"><a href="index.html"><img src="img/reservia.svg" class="navbar__brand-logo__img" alt="Logo Reservia" /></a></p>
-        <p class="navbar__subscription-link"><a href="#" >S'inscrire</a></p>
+        <p class="navbar__brand-logo">
+          <a href="index.html"
+            ><img
+              src="img/reservia.svg"
+              class="navbar__brand-logo__img"
+              alt="Logo Reservia"
+          /></a>
+        </p>
+        <p class="navbar__subscription-link"><a href="#">S'inscrire</a></p>
         <ul class="navbar__list">
-          <li class="navbar__list-item navbar__list-item--active"><a href="#accommodation">Hébergements</a></li>
+          <li class="navbar__list-item navbar__list-item--active">
+            <a href="#accommodation">Hébergements</a>
+          </li>
           <li class="navbar__list-item"><a href="#activities">Activités</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="page__main">
       <!-- Section 1 - Search form & Filters -->
       <section class="accommodation-search">
         <h1>trouver votre hébergement pour des vacances de rêve</h1>
@@ -97,8 +106,43 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-
+    <footer class="footer">
+      <div class="footer__column">
+        <h5 class="footer__title">À propos</h5>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#">Fonctionnement du site</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#">Conditions générales de vente</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#">Données et confidentialité</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h5 class="footer__title">Nos hébergements</h5>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#">Charte qualité</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#">Soumettre votre hôtel</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h5 class="footer__title">Assistance</h5>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#">Centre d'aide</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#">Nous contacter</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
