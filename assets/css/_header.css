@@ -1,0 +1,71 @@
+/* ################################ */
+/*            HEADER STYLE          */
+/* ################################ */
+header {
+  width: 100%;
+  height: auto;
+}
+nav.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 1.25rem;
+}
+nav.navbar p {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  max-height: 3.125rem;
+  height: 3.125rem;
+}
+nav.navbar p.navbar__brand-logo {
+  justify-content: flex-start;
+  padding-left: 1.25rem;
+}
+nav.navbar p.navbar__subscription-link {
+  justify-content: flex-end;
+  padding-right: 1.25rem;
+}
+nav.navbar p.navbar__subscription-link a {
+  color: #0065fc;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s;
+}
+nav.navbar p.navbar__subscription-link a:hover {
+  border-bottom: 3px solid #deebff;}
+
+nav.navbar .navbar__list {
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+nav.navbar .navbar__list .navbar__list-item {
+  width: 50%;
+  border-bottom: 3px solid #f2f2f2;
+  line-height: 3.125em;
+}
+nav.navbar .navbar__list .navbar__list-item:hover {
+  border-bottom: 3px solid #deebff;
+}
+nav.navbar .navbar__list .navbar__list-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  display: block;
+}
+nav.navbar .navbar__list .navbar__list-item a:hover {
+  text-decoration: none;
+  font-weight: 400;
+}
+nav.navbar .navbar__list .navbar__list-item--active {
+  border-bottom: 3px solid #0065fc !important;
+}
+nav.navbar .navbar__list .navbar__list-item--active a {
+  color: #0065fc;
+}

@@ -68,12 +68,12 @@
   <body>
     <!-- Header -->
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html"><img src="img/reservia.svg" /></a></li>
-          <li><a href="#accommodation">Hébergements</a></li>
-          <li><a href="#activities">Activités</a></li>
-          <li><a href="#">S'inscrire</a></li>
+      <nav class="navbar">
+        <p class="navbar__brand-logo"><a href="index.html"><img src="img/reservia.svg" class="navbar__brand-logo__img" alt="Logo Reservia" /></a></p>
+        <p class="navbar__subscription-link"><a href="#" >S'inscrire</a></p>
+        <ul class="navbar__list">
+          <li class="navbar__list-item navbar__list-item--active"><a href="#accommodation">Hébergements</a></li>
+          <li class="navbar__list-item"><a href="#activities">Activités</a></li>
         </ul>
       </nav>
     </header>
@@ -81,7 +81,10 @@
     <!-- Main -->
     <main>
       <!-- Section 1 - Search form & Filters -->
-      <section class="accommodation-search"></section>
+      <section class="accommodation-search">
+        <h1>trouver votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+      </section>
 
       <!-- Section 2 - Hosting results -->
       <section id="accommodation" class="accommodation-results">
@@ -94,6 +97,8 @@
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+
+    </footer>
   </body>
 </html>
