@@ -1,7 +1,6 @@
-@import url('_fonts.css');
-@import url('_header.css');
-@import url('_main.css');
-@import url('_footer.css');
+/* ################################ */
+/*           GENERAL STYLE          */
+/* ################################ */
 
 *{
   box-sizing: border-box;

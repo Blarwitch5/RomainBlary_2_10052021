@@ -1,0 +1,47 @@
+/* ################################ */
+/*       MAIN CONTENT STYLE         */
+/* ################################ */
+
+/* activities */
+section.related-activities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.related-activities article {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 1.563rem;
+  
+}
+section.related-activities article a{
+  display: block;
+  width: 100%;
+}
+
+section.related-activities article a figure{
+  width: 100%;
+	height: 8.438em;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+  border-top-left-radius: 1.563em;
+  border-top-right-radius: 1.563em;
+}
+section.related-activities article a figure img {
+  -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  object-fit: cover;
+  width: 100%;
+}
+section.related-activities article a:hover figure img {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+  
+}
+/* section.related-activities article a {
+  transition: transform 0.3s;
+} */
