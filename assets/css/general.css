@@ -6,12 +6,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 /* Remove default padding */
 ul[class],
 ol[class] {
-  padding: 0;
+    padding: 0;
 }
 /* Remove default margin */
 body,
@@ -19,7 +19,8 @@ h1,
 h2,
 h3,
 h4,
-h5,h6,
+h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -29,19 +30,20 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 /* Make images easier to work with */
 img {
     max-width: 100%;
     display: block;
-  }
+}
 body {
     scroll-behavior: smooth;
     width: 100%;
     margin: auto;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
+    line-height: 140%;
 }
 /*#########################################################*/
 /*
@@ -302,5 +304,53 @@ body {
     .col-xl-12 {
         flex: 0 0 auto;
         width: 100%;
+    }
+}
+
+/***** Visible/Hidden classes *****/
+.hidden {
+    display: none;
+}
+@media (min-width: 576px) {
+    .sm-hidden {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .md-hidden {
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
+    .lg-hidden {
+        display: none;
+    }
+}
+@media (min-width: 1330px) {
+    .xl-hidden {
+        display: none;
+    }
+}
+.block {
+    display: block;
+}
+@media (min-width: 576px) {
+    .sm-block {
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .md-block {
+        display: block;
+    }
+}
+@media (min-width: 1024px) {
+    .lg-block {
+        display: block;
+    }
+}
+@media (min-width: 1330px) {
+    .xl-block {
+        display: block;
     }
 }

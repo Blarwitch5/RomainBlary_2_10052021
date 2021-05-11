@@ -69,8 +69,42 @@
         <main class="page__main">
             <!-- Section 1 - Search form & Filters -->
             <section class="accommodation-search">
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
+                <div class="accommodation-search__txt">
+                    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                <div class="accommodation-search__city-searchform">
+                    <span class="searchform__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <input class="city-searchform__field" type="text" value="Marseille, France" aria-label="Rechercher hébergement pour vos vacances" />
+                    <button class="city-searchform__btn" type="submit">
+                        <i class="fas fa-search md-hidden lg-hidden xl-hidden"></i>
+                        <span class="hidden md-block lg-block xl-block">Rechercher</span>
+                    </button>
+                </div>
+                <div class="accommodation-search__filters">
+                    <p class="accommodation-search__filters__title">Filtres</p>
+                    <div class="filter">
+                        <span class="filter__icon"><i class="fas fa-money-bill-wave"></i></span>
+                        <span class="filter__txt">économique</span>
+                    </div>
+                    <div class="filter">
+                        <span class="filter__icon"><i class="fas fa-child"></i></span>
+                        <span class="filter__txt">familial</span>
+                    </div>
+                    <div class="filter">
+                        <span class="filter__icon"><i class="fas fa-heart"></i></span>
+                        <span class="filter__txt">romantique</span>
+                    </div>
+                    <div class="filter">
+                        <span class="filter__icon"><i class="fas fa-dog"></i></span>
+                        <span class="filter__txt">animaux autorisés</span>
+                    </div>
+                    <p class="accommodation-search__filters__info">
+                        <span class="filters__info__icon"><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                </div>
             </section>
 
             <!-- Section 2 - Hosting results -->
@@ -82,7 +116,7 @@
             <!-- Section 3 - Featured Content - Related Activities -->
             <section id="activities" class="related-activities">
                 <h3>Activités à Marseille</h3>
-                <article class="">
+                <article class="activity">
                     <a href="#">
                         <figure>
                             <img src="https://picsum.photos/id/237/200/300" alt="Vieux Port de Marseille" />
@@ -90,7 +124,7 @@
                         <h4>Vieux Port</h4>
                     </a>
                 </article>
-                <article class="">
+                <article class="activity">
                     <a href="#">
                         <figure>
                             <img src="https://picsum.photos/id/237/200/300" alt="Fort de Pomègues de Marseille" />
@@ -98,7 +132,7 @@
                         <h4>Fort de Pomègues</h4>
                     </a>
                 </article>
-                <article class="">
+                <article class="activity">
                     <a href="#">
                         <figure>
                             <img src="https://picsum.photos/id/237/200/300" alt="Îles du Frioul de Marseille" />
@@ -106,7 +140,7 @@
                         <h4>Îles du Frioul</h4>
                     </a>
                 </article>
-                <article class="">
+                <article class="activity">
                     <a href="#">
                         <figure>
                             <img
@@ -117,7 +151,7 @@
                         <h4>Parc National des Calanques</h4>
                     </a>
                 </article>
-                <article class="">
+                <article class="activity">
                     <a href="#">
                         <figure>
                             <img src="https://picsum.photos/id/237/200/300" alt="Notre-Dame-de-la-Garde de Marseille" />
@@ -125,7 +159,7 @@
                         <h4>Notre-Dame-de-la-Garde</h4>
                     </a>
                 </article>
-                <article class="">
+                <article class="activity">
                     <a href="#">
                         <figure>
                             <img src="https://picsum.photos/id/237/200/300" alt="Parc Longchamp de Marseille" />

@@ -2,46 +2,193 @@
 /*       MAIN CONTENT STYLE         */
 /* ################################ */
 
-/* activities */
-section.related-activities {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* SECTION 1 - Search form & Filters */
+.accommodation-search {
+    padding: 1.25rem;
+    margin: 1rem 0 0 0;
 }
-section.related-activities article {
-  width: 100%;
-  padding: 1.25rem;
-  border-radius: 1.563rem;
-  
-}
-section.related-activities article a{
-  display: block;
-  width: 100%;
+.accommodation-search__txt h1 {
+    line-height: 1.875rem;
+    margin-bottom: 0.625rem ;
 }
 
-section.related-activities article a figure{
-  width: 100%;
-	height: 8.438em;
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
-  border-top-left-radius: 1.563em;
-  border-top-right-radius: 1.563em;
+/*form input*/
+.accommodation-search__city-searchform {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1.875rem 0;
 }
-section.related-activities article a figure img {
-  -webkit-transform: scale(1.2);
-	transform: scale(1.2);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-  object-fit: cover;
-  width: 100%;
+.accommodation-search__city-searchform .city-searchform__btn,
+.accommodation-search__city-searchform .searchform__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.125rem;
 }
-section.related-activities article a:hover figure img {
-  -webkit-transform: scale(1);
-	transform: scale(1);
-  
+.accommodation-search__city-searchform .searchform__icon {
+    background-color: #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
-/* section.related-activities article a {
+.accommodation-search__city-searchform .searchform__icon svg,
+.accommodation-search__city-searchform .city-searchform__btn svg {
+    font-size: 1.25rem;
+}
+.accommodation-search__city-searchform .city-searchform__field {
+    border: 1px solid #f2f2f2;
+    height: 3.125rem;
+    flex-grow: 1;
+}
+.accommodation-search__city-searchform .city-searchform__field[value] {
+    font-weight: 600;
+    padding-left: 1.25rem;
+}
+.accommodation-search__city-searchform .city-searchform__btn {
+    background-color: #0065fc;
+    border-radius: 15px;
+    color: #fff;
+    border: none;
+    margin-left: -0.938rem;
+}
+.accommodation-search__filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+.accommodation-search__filters .accommodation-search__filters__title {
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 0.625rem;
+}
+.accommodation-search__filters .accommodation-search__filters__info {
+    width: 100%;
+    margin:1.875em 0 0.625rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+.accommodation-search__filters .accommodation-search__filters__info .filters__info__icon {
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    width:1.563rem;
+    height:1.563rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    font-size: 0.750rem;
+    margin-right: 0.938rem;
+    padding: 0 10px;
+
+}
+.accommodation-search__filters .filter {
+    background: linear-gradient(to right, rgba(222, 235, 255, 1) 50%, rgba(222, 235, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    border-radius: 1.563rem;
+    margin: 0.313rem 0.625rem 0.313rem 0;
+    display: flex;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.accommodation-search__filters .filter::before {
+    position: absolute;
+    border: 3px solid #f2f2f2;
+    border-radius: 1.563rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+}
+.accommodation-search__filters .filter:hover {
+    background-position: left bottom;
+}
+.accommodation-search__filters .filter .filter__icon {
+    background-color: #deebff;
+    color: #0065fc;
+    border-radius: 50%;
+    height: 3.125rem;
+    width: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.accommodation-search__filters .filter .filter__txt {
+    line-height: 3.125rem;
+    padding: 0 0.938rem 0 4.063rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* SECTION 2 - Hosting results */
+
+/* SECTION 3 - activities */
+section.related-activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.875em ;
+}
+section.related-activities h3 {
+    padding: 0 1.25rem;
+    line-height: 3.125rem;
+}
+section.related-activities article.activity {
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 1.563rem;
+}
+section.related-activities article.activity a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+section.related-activities article.activity a figure {
+    width: 100%;
+    height: 8.438em;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    border-top-left-radius: 1.563em;
+    border-top-right-radius: 1.563em;
+}
+section.related-activities article.activity a figure img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    object-fit: cover;
+    width: 100%;
+}
+section.related-activities article.activity a:hover figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+section.related-activities article.activity a h4 {
+    color: #000;
+    background-color: #fff;
+    padding-left: 1.25rem;
+    padding-top: 0.313rem;
+    line-height: 3.125rem;
+    border-bottom-left-radius: 1.563em;
+    border-bottom-right-radius: 1.563em;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+section.related-activities article.activity a:hover h4 {
+    color: #0065fc;
+}
+/* section.related-activities article.activity a {
   transition: transform 0.3s;
 } */
