@@ -2,21 +2,54 @@
 /*           GENERAL STYLE          */
 /* ################################ */
 
-* {
-    box-sizing: border-box;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+  }
 body {
+    scroll-behavior: smooth;
     width: 100%;
     margin: auto;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
 }
 /*#########################################################*/
-/* Brekpoints
-  sm: 576px,
-  mb: 768px,
-  lg: 1024px,
-  xl: 1330px
+/*
+        Brekpoints
+        sm: 576px,
+        mb: 768px,
+        lg: 1024px,
+        xl: 1330px
 */
 /*#########################################################*/
 .col-1 {
