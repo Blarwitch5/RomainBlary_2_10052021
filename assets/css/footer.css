@@ -35,3 +35,12 @@ footer .footer__column .footer__list .footer__list-item a {
 footer .footer__column .footer__list .footer__list-item a:hover {
     color: #0065fc;
 }
+
+/*------ Tablet & Desktop version 768px and above ------*/
+@media (max-width: 1339.98px)  {
+    footer {
+        margin: unset;
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
