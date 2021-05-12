@@ -3,9 +3,10 @@
 /* ################################ */
 footer {
     background-color: #f2f2f2;
-    padding: 2.5rem 1.25rem;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -9999rem;
+    padding: 2.5rem 9999rem;
 }
 footer .footer__column {
     display: flex;
@@ -15,10 +16,12 @@ footer .footer__column .footer__title {
     font-size: 1rem;
     font-weight: 800;
     line-height: 3.125rem;
+    padding-left:1.250rem;
+
 }
 footer .footer__column .footer__list {
     list-style: none;
-    padding-left: 0;
+    padding-left:1.250rem;
 }
 footer .footer__column .footer__list .footer__list-item {
     font-weight: normal;

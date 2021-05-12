@@ -2,6 +2,12 @@
 /*           GENERAL STYLE          */
 /* ################################ */
 
+::-moz-selection {
+    background: #deebff;
+}
+::selection {
+    background: #deebff;
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -40,10 +46,14 @@ img {
 body {
     scroll-behavior: smooth;
     width: 100%;
+    max-width: 1330px;
     margin: auto;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
     line-height: 140%;
+}
+a{
+    cursor: pointer;
 }
 
 /*#########################################################*/
