@@ -46,6 +46,8 @@
     font-weight: 600;
     padding: 0 1.25rem;
     box-shadow: none !important;
+    border-radius: 0 !important;
+    -webkit-appearance: none;
 }
 .accommodation-search__city-searchform .city-searchform__btn {
     background-color: #0065fc;
