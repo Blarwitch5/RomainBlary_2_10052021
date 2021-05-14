@@ -135,11 +135,14 @@
     top: 0;
     left: 0;
 }
-.accommodation-search__filters .filter .filter__txt {
+.accommodation-search__filters .filter a .filter__txt {
     line-height: 3.125rem;
     padding: 0 0.938rem 0 4.063rem;
     font-weight: 600;
     text-transform: capitalize;
+}
+.accommodation-search__filters .filter a:hover .filter__txt {
+    color: #0065fc;
 }
 /* =============================================
    END SECTION 1 - Search form & Filters 
