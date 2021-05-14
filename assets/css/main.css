@@ -41,6 +41,7 @@
     border: 1px solid #f2f2f2;
     height: 3.125rem;
     flex-grow: 1;
+    margin-left: 0;
 }
 .accommodation-search__city-searchform .city-searchform__field[value] {
     font-weight: 600;
