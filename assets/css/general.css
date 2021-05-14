@@ -5,7 +5,7 @@
 	- Author:   Romain Blary   
 */
 
-/* CSS DIRECTORY
+/* CSS FILES
 	1. assets/css/fonts.css
 	2. assets/css/general.css
 	3. assets/css/header.css
@@ -28,7 +28,6 @@
 
 /* GLOBAL SETTINGS
    -------------------------------------------------------------------- */
-
 ::-moz-selection {
     background: #deebff;
 }
@@ -71,8 +70,10 @@ img {
     height: auto;
     display: block;
 }
-body {
+html{
     scroll-behavior: smooth;
+}
+body {
     width: 100%;
     /* max-width: 1400px; */
     margin: auto;

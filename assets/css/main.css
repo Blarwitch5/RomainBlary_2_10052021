@@ -602,6 +602,10 @@ article a {
     transition: all 0.3s;
     cursor: pointer;
 }
+#accommodation,
+#activities {
+    overflow-y: scroll;
+}
 .accommodation-popular .popular-item a:hover .popular-item__info .popular-item__info__title,
 .related-activities .activity a:hover .activity__title,
 .accommodation-results .accommodation-list .accommodation a:hover .accommodation__info .accommodation__info__title {
