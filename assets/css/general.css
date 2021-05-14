@@ -41,6 +41,7 @@ dd {
 /* Make images easier to work with */
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 body {
@@ -54,9 +55,9 @@ body {
     overflow-x: hidden;
 }
 a {
-    transition: all .3s;
+    transition: all 0.3s;
     text-decoration: none;
-    color: #000;;
+    color: #000;
     cursor: pointer;
 }
 
@@ -440,7 +441,7 @@ a {
     margin-right: auto;
     margin-left: auto;
 }
-.fullwidth-wrapper{
+.fullwidth-wrapper {
     width: 100%;
     max-width: 100%;
     margin-right: auto;
