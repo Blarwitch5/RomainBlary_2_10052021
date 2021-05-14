@@ -48,10 +48,11 @@
 }
 .accommodation-search__city-searchform .city-searchform__btn {
     background-color: #0065fc;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     color: #fff;
     border: none;
     margin-left: -0.938rem;
+    transition: all 0.3s;
 }
 /*  ||  FILTERS STYLE  ||  */
 .accommodation-search__filters {
@@ -365,6 +366,13 @@
         border-top-left-radius: unset;
         cursor: pointer;
     }
+    .accommodation-search__city-searchform .city-searchform__btn:hover,
+    .accommodation-search__city-searchform .city-searchform__btn:focus,
+    .accommodation-search__city-searchform .city-searchform__btn:active {
+        border-bottom-left-radius: 0.938rem;
+        border-top-left-radius: 0.938rem;
+        color: #deebff;
+    }
     /***** END SECTION 1 *****/
 
     /***** SECTION 2 - Results *****/
@@ -550,7 +558,7 @@ article {
     min-width: 13.625rem;
 }
 article a {
-    transition: all .3s;
+    transition: all 0.3s;
     cursor: pointer;
 }
 .accommodation-popular .popular-item a:hover .popular-item__info .popular-item__info__title,
@@ -564,7 +572,9 @@ article a {
 .show-more a {
     font-weight: 600;
 }
-.show-more a:hover {
+.show-more a:hover,
+.show-more a:focus,
+.show-more a:active {
     color: #0065fc;
 }
 /*****STARS******/
