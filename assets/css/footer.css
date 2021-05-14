@@ -5,8 +5,13 @@ footer {
     background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -9999rem;
-    padding: 2.5rem 9999rem;
+    padding: 2.5rem 0;
+}
+.footer_content {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 footer .footer__column {
     display: flex;
@@ -16,12 +21,11 @@ footer .footer__column .footer__title {
     font-size: 1rem;
     font-weight: 800;
     line-height: 3.125rem;
-    padding-left:1.250rem;
-
+    padding-left: 1.25rem;
 }
 footer .footer__column .footer__list {
     list-style: none;
-    padding-left:1.250rem;
+    padding-left: 1.25rem;
 }
 footer .footer__column .footer__list .footer__list-item {
     font-weight: normal;
@@ -37,7 +41,7 @@ footer .footer__column .footer__list .footer__list-item a:hover {
 }
 
 /*------ Tablet & Desktop version 768px and above ------*/
-@media (max-width: 1339.98px)  {
+@media (max-width: 1339.98px) {
     footer {
         margin: unset;
         padding-left: unset;

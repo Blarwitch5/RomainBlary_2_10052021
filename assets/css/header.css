@@ -71,7 +71,7 @@
 .navbar .navbar__list .navbar__list-item--active a {
     color: #0065fc;
 }
-
+/*------ Tablet version 768px to 1024px ------*/
 @media (min-width: 768px) {
     .navbar {
         flex-wrap: nowrap;
@@ -93,15 +93,13 @@
         padding: 0 1.563rem;
         position: relative;
     }
-    .navbar__list .navbar__list-item a:hover, .navbar__subscription-link:hover{
-      color: #0065fc;
+    .navbar__list .navbar__list-item a:hover,
+    .navbar__subscription-link:hover {
+        color: #0065fc;
     }
     .navbar__list .navbar__list-item--active a:hover {
-      color: #0065fc;
-  }
-    /* .navbar__list .navbar__list-item:last-child {
-        margin-right: 1.25rem;
-    } */
+        color: #0065fc;
+    }
     .navbar__list .navbar__list-item--active,
     .navbar__list .navbar__list-item {
         border-bottom: unset !important;
@@ -124,7 +122,7 @@
         order: 3;
     }
 }
-
+/*------ Desktop version 1024px and above ------*/
 @media (min-width: 1024px) {
     .navbar__list .navbar__list-item {
         margin: 0 1.25rem;
