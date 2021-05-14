@@ -1,6 +1,33 @@
-/* ################################ */
-/*           GENERAL STYLE          */
-/* ################################ */
+/* DOCUMENT INFORMATION
+	- Document: Project Reservia - OpenClassrooms
+	- Version:  1.0
+	- Client:   Reservia
+	- Author:   Romain Blary   
+*/
+
+/* CSS DIRECTORY
+	1. assets/css/fonts.css
+	2. assets/css/general.css
+	3. assets/css/header.css
+	4. assets/css/main.css
+	5. assets/css/footer.css
+*/
+
+/* COLORS
+	- default body text  #000
+	- title text         #000
+	- light gray         #f2f2f2
+    - blue               #0065fc
+    - light blue         #deebff
+*/
+
+/* FONTS
+	- title hn text   'Raleway', Arial, sans-serif
+*/
+
+
+/* GLOBAL SETTINGS
+   -------------------------------------------------------------------- */
 
 ::-moz-selection {
     background: #deebff;

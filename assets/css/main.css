@@ -1,10 +1,9 @@
-/* ################################ */
-/*       MAIN CONTENT STYLE         */
-/* ################################ */
+/* MAIN CONTENT STYLE
+   -------------------------------------------------------------------- */
 
-/******************************************************************
-        SECTION 1 - Search form & Filters
- ******************************************************************/
+/* =============================================
+   SECTION 1 - Search form & Filters 
+   ============================================= */
 .accommodation-search {
     padding: 1.25rem;
     margin: 1rem 0 0 0;
@@ -14,7 +13,7 @@
     margin-bottom: 0.625rem;
 }
 
-/*  ||  FORM STYLE  ||  */
+/*****  ||  FORM STYLE  ||  *****/
 .accommodation-search__city-searchform {
     display: flex;
     flex-direction: row;
@@ -55,7 +54,7 @@
     margin-left: -0.938rem;
     transition: all 0.3s;
 }
-/*  ||  FILTERS STYLE  ||  */
+/*****  ||  FILTERS STYLE  ||  *****/
 .accommodation-search__filters {
     display: flex;
     flex-wrap: wrap;
@@ -139,13 +138,14 @@
     font-weight: 600;
     text-transform: capitalize;
 }
-/******************************************************************
-        END SECTION 1 - Search form & Filters
- ******************************************************************/
+/* =============================================
+   END SECTION 1 - Search form & Filters 
+   ============================================= */
 
-/******************************************************************
-        SECTION 2 - Hosting results
- ******************************************************************/
+/* =============================================
+   SECTION 2 - Hosting results 
+   ============================================= */
+
 .accommodation-results .accommodation-list,
 .accommodation-results .accommodation-popular {
     padding: 1.25rem;
@@ -155,7 +155,7 @@
     flex-wrap: nowrap;
     padding: 0;
 }
-/*  ||  ACCOMMODATION LIST  ||  */
+/*****  ||  ACCOMMODATION LIST  ||  *****/
 .accommodation-results .accommodation-list {
     display: flex;
     flex-direction: column;
@@ -195,7 +195,7 @@
     align-items: center;
     justify-content: center;
 
-    /* Safari hack for hover border-radius*/
+    /***** Safari hack for hover border-radius *****/
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 .accommodation-results .accommodation-list .accommodation a .accommodation__img img {
@@ -227,7 +227,7 @@
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
-/*  ||  POPULAR ACCOMMODATION LIST  ||  */
+/*****  ||  POPULAR ACCOMMODATION LIST  ||  *****/
 .accommodation-results .accommodation-popular {
     display: flex;
     flex-wrap: wrap;
@@ -265,7 +265,6 @@
     height: 100%;
 }
 .accommodation-popular .popular-item a .popular-item__img {
-    /* height: 8.438rem; */
     height: auto;
     padding: 0;
     background: #fff;
@@ -276,7 +275,7 @@
     align-items: center;
     justify-content: center;
 
-    /* Safari hack for hover border-radius*/
+    /***** Safari hack for hover border-radius*****/
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 .accommodation-popular .popular-item a .popular-item__img img {
@@ -307,13 +306,14 @@
 .accommodation-results .accommodation-list .accommodation a .accommodation__info .accommodation__info__night-price {
     flex-grow: 1;
 }
-/******************************************************************
-        END SECTION 2 - Hosting results
- ******************************************************************/
+/* =============================================
+   END SECTION 2 - Hosting results 
+   ============================================= */
 
-/******************************************************************
-        SECTION 3 - activities
- ******************************************************************/
+/* =============================================
+   SECTION 3 - activities 
+   ============================================= */
+
 .related-activities {
     flex-direction: column;
     justify-content: center;
@@ -351,7 +351,7 @@
     align-items: center;
     justify-content: center;
 
-    /* Safari hack for hover border-radius*/
+    /***** Safari hack for hover border-radius *****/
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 .related-activities .activity a .activity__img img {
@@ -376,13 +376,14 @@
     border-bottom-left-radius: 1.563em;
     border-bottom-right-radius: 1.563em;
 }
-/******************************************************************
-        END SECTION 3 - activities
- ******************************************************************/
+/* =============================================
+   END SECTION 3 - activities 
+   ============================================= */
 
-/******************************************************************
-        RESPONSIVE STYLE
- ******************************************************************/
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
 /*------ Tablet version 768px to 992px ------*/
 @media (min-width: 768px) {
     /***** SECTION 1 - Search *****/
@@ -469,26 +470,6 @@
     .related-activities .activity:nth-child(4) a .activity__img {
         height: 8.438rem;
     }
-    /* .related-activities .activity:nth-child(1),
-    .related-activities .activity:nth-child(4) {
-        height: 28.125rem;
-    }
-    .related-activities .activity:nth-child(1) a .activity__img,
-    .related-activities .activity:nth-child(4) a .activity__img {
-        height: 24.688rem;
-    }
-    .related-activities .activity:nth-child(2),
-    .related-activities .activity:nth-child(3),
-    .related-activities .activity:nth-child(6),
-    .related-activities .activity:nth-child(5) {
-        height: 14.063rem;
-    }
-    .related-activities .activity:nth-child(2) a .activity__img,
-    .related-activities .activity:nth-child(3) a .activity__img,
-    .related-activities .activity:nth-child(6) a .activity__img,
-    .related-activities .activity:nth-child(5) a .activity__img {
-        height: 10.625rem;
-    } */
     /***** END SECTION 3 *****/
 }
 /*------ Desktop version 992px and above ------*/
@@ -605,9 +586,9 @@
     /***** END SECTION 3 *****/
 }
 
-/******************************************************************
-        COMMUN STYLE
- ******************************************************************/
+/* =============================================
+   COMMUN STYLE 
+   ============================================= */
 article {
     min-width: 13.625rem;
 }
@@ -636,11 +617,11 @@ article a {
     font-size: 0.75rem;
     cursor: pointer;
 }
-/*blue stars*/
+/*****blue stars*****/
 .star-blue {
     color: #0065fc;
 }
-/*Gray stars*/
+/*****Gray stars*****/
 .star-gray {
     color: #d9d9d9;
 }
