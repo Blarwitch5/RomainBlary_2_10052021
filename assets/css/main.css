@@ -190,6 +190,9 @@
     text-decoration: none;
     color: black;
 }
+.accommodation-results .accommodation-list .accommodation__info .accommodation__info__title{
+    font-size: 1rem;
+}
 .accommodation-results .accommodation-list .accommodation a .accommodation__img {
     height: 8.063rem;
     padding: 0;
