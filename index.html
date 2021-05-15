@@ -42,9 +42,9 @@
         <script src="https://kit.fontawesome.com/6bc9efc887.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class="page">
+    <body>
         <!-- Header -->
-        <header class="page__header wrapper">
+        <header class="header wrapper">
             <nav class="navbar flex">
                 <p class="navbar__brand-logo flex">
                     <a href="index.html">
@@ -66,31 +66,31 @@
         </header>
 
         <!-- Main -->
-        <main class="page__main fullwidth-wrapper">
+        <main class="main fullwidth-wrapper">
             <div class="wrapper">
                 <!-- Section 1 - Search form & Filters -->
-                <section class="accommodation-search row">
-                    <div class="accommodation-search__txt col-12">
+                <section class="search-box row">
+                    <div class="search-box__txt col-12">
                         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
-                    <div class="accommodation-search__city-searchform flex col-12">
+                    <div class="search-box__searchform flex col-12">
                         <span class="searchform__icon flex flex-center-item">
                             <i class="fas fa-map-marker-alt"></i>
                         </span>
                         <input
-                            class="city-searchform__field"
+                            class="searchform__field"
                             type="text"
                             value="Marseille, France"
                             aria-label="Rechercher hébergement pour vos vacances"
                         />
-                        <button class="city-searchform__btn flex flex-center-item" aria-label="Bouton de recherche d'hébergement" type="submit">
+                        <button class="searchform__btn flex flex-center-item" aria-label="Bouton de recherche d'hébergement" type="submit">
                             <i class="fas fa-search md-hidden lg-hidden xl-hidden"></i>
                             <span class="hidden md-block lg-block xl-block">Rechercher</span>
                         </button>
                     </div>
-                    <div class="accommodation-search__filters flex col-12">
-                        <p class="accommodation-search__filters__title">Filtres</p>
+                    <div class="search-box__filters flex col-12">
+                        <p class="filters-title">Filtres</p>
                         <div class="filter flex rounded-item">
                             <a href="#" class="block">
                                 <span class="filter__icon flex flex-center-item"><i class="fas fa-money-bill-wave"></i></span>
@@ -115,16 +115,16 @@
                                 <span class="filter__txt">animaux autorisés</span>
                             </a>
                         </div>
-                        <p class="accommodation-search__filters__info flex">
+                        <p class="search-box__filters__info flex">
                             <span class="filters__info__icon flex flex-center-item"><i class="fas fa-info"></i></span>Plus de 500 logements sont
                             disponibles dans cette ville
                         </p>
                     </div>
                 </section>
                 <!-- Section 2 - Hosting results -->
-                <section id="accommodation" class="accommodation-results row">
-                    <div class="accommodation-list flex rounded-item col-12 col-xl-8">
-                        <h2 class="accommodation-list__title">Hébergements à Marseille</h2>
+                <section id="accommodations" class="accommodations row">
+                    <div class="accommodations-list flex rounded-item col-12 col-xl-8">
+                        <h2 class="accommodations-list__title">Hébergements à Marseille</h2>
                         <article class="accommodation rounded-item shadow-item col-12 col-md-6 col-lg-6 col-xxl-4">
                             <a href="#" class="flex">
                                 <figure class="accommodation__img flex flex-center-item rounded-top-item">
@@ -261,8 +261,8 @@
                             <a href="#">Afficher plus</a>
                         </p>
                     </div>
-                    <div class="accommodation-popular flex col-12 col-xl-4">
-                        <h3 class="accommodation-popular__title flex"><span>Les plus populaires</span> <i class="fas fa-chart-line"></i></h3>
+                    <div class="accommodations-popular flex col-12 col-xl-4">
+                        <h3 class="accommodations-popular__title flex"><span>Les plus populaires</span> <i class="fas fa-chart-line"></i></h3>
                         <article class="popular-item shadow-item col-12 col-md-8 col-lg-4 col-xl-12">
                             <a href="#" class="flex">
                                 <figure class="popular-item__img flex flex-center-item rounded-left-item col-5">
