@@ -1,3 +1,10 @@
+/* CSS DIRECTORY
+
+	1. HEADER
+	2. FOOTER
+    
+*/
+
 /* HEADER STYLE
    -------------------------------------------------------------------- */
 .page__header {
@@ -5,7 +12,6 @@
     height: auto;
 }
 .navbar {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 1.25rem;
@@ -13,7 +19,6 @@
 
 .navbar p {
     width: 50%;
-    display: flex;
     align-items: center;
     max-height: 3.125rem;
     height: 3.125rem;
@@ -41,7 +46,6 @@
     list-style: none;
     padding-left: 0;
     margin-top: 0;
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     text-align: center;
@@ -55,13 +59,10 @@
     border-bottom: 3px solid #deebff;
 }
 .navbar .navbar__list .navbar__list-item a {
-    color: #000;
-    text-decoration: none;
     font-weight: 400;
     display: block;
 }
 .navbar .navbar__list .navbar__list-item a:hover {
-    text-decoration: none;
     font-weight: 400;
 }
 .navbar .navbar__list .navbar__list-item--active {
@@ -136,5 +137,44 @@
     }
     .navbar__list .navbar__list-item--active:hover::before {
         background-color: #0065fc;
+    }
+}
+
+/* FOOTER STYLE
+   -------------------------------------------------------------------- */
+footer {
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
+}
+.footer_content {
+    margin: auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+footer .footer__column {
+    flex-direction: column;
+}
+footer .footer__column .footer__title {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 3.125rem;
+    padding-left: 1.25rem;
+}
+footer .footer__column .footer__list {
+    list-style: none;
+    padding-left: 1.25rem;
+}
+footer .footer__column .footer__list .footer__list-item {
+    font-weight: normal;
+    line-height: 2.188rem;
+}
+
+/*------ Tablet & Desktop version 768px and above ------*/
+@media (max-width: 1339.98px) {
+    footer {
+        margin: unset;
+        padding-left: unset;
+        padding-right: unset;
     }
 }

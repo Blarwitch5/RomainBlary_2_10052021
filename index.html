@@ -24,10 +24,10 @@
 
         <!-- CSS -->
         <link href="assets/css/fonts.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/grid.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/general.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/header.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/header--footer.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/footer.css" rel="stylesheet" type="text/css" />
 
         <!-- FAVICON -->
         <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png" />
@@ -45,16 +45,16 @@
     <body class="page">
         <!-- Header -->
         <header class="page__header wrapper">
-            <nav class="navbar">
-                <p class="navbar__brand-logo">
+            <nav class="navbar flex">
+                <p class="navbar__brand-logo flex">
                     <a href="index.html">
                         <img src="img/reservia.svg" class="navbar__brand-logo__img" alt="Logo Reservia" />
                     </a>
                 </p>
-                <p class="navbar__subscription-link">
+                <p class="navbar__subscription-link flex">
                     <a href="#">S'inscrire</a>
                 </p>
-                <ul class="navbar__list">
+                <ul class="navbar__list flex">
                     <li class="navbar__list-item navbar__list-item--active">
                         <a href="#accommodation">Hébergements</a>
                     </li>
@@ -74,8 +74,8 @@
                         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
-                    <div class="accommodation-search__city-searchform col-12">
-                        <span class="searchform__icon">
+                    <div class="accommodation-search__city-searchform flex col-12">
+                        <span class="searchform__icon flex flex-center-item">
                             <i class="fas fa-map-marker-alt"></i>
                         </span>
                         <input
@@ -84,53 +84,57 @@
                             value="Marseille, France"
                             aria-label="Rechercher hébergement pour vos vacances"
                         />
-                        <button class="city-searchform__btn" aria-label="Bouton de recherche d'hébergement" type="submit">
+                        <button class="city-searchform__btn flex flex-center-item" aria-label="Bouton de recherche d'hébergement" type="submit">
                             <i class="fas fa-search md-hidden lg-hidden xl-hidden"></i>
                             <span class="hidden md-block lg-block xl-block">Rechercher</span>
                         </button>
                     </div>
-                    <div class="accommodation-search__filters col-12">
+                    <div class="accommodation-search__filters flex col-12">
                         <p class="accommodation-search__filters__title">Filtres</p>
-                        <div class="filter">
-                            <a href="#">
-                                <span class="filter__icon"><i class="fas fa-money-bill-wave"></i></span>
+                        <div class="filter flex rounded-item">
+                            <a href="#" class="block">
+                                <span class="filter__icon flex flex-center-item"><i class="fas fa-money-bill-wave"></i></span>
                                 <span class="filter__txt">économique</span>
                             </a>
                         </div>
-                        <div class="filter">
-                            <a href="#">
-                                <span class="filter__icon"><i class="fas fa-child"></i></span>
+                        <div class="filter flex rounded-item">
+                            <a href="#" class="block">
+                                <span class="filter__icon flex flex-center-item"><i class="fas fa-child"></i></span>
                                 <span class="filter__txt">familial</span>
                             </a>
                         </div>
-                        <div class="filter">
-                            <a href="#">
-                                <span class="filter__icon"><i class="fas fa-heart"></i></span>
+                        <div class="filter flex rounded-item">
+                            <a href="#" class="block">
+                                <span class="filter__icon flex flex-center-item"><i class="fas fa-heart"></i></span>
                                 <span class="filter__txt">romantique</span>
                             </a>
                         </div>
-                        <div class="filter">
-                            <a href="#">
-                                <span class="filter__icon"><i class="fas fa-dog"></i></span>
+                        <div class="filter flex rounded-item">
+                            <a href="#" class="block">
+                                <span class="filter__icon flex flex-center-item"><i class="fas fa-dog"></i></span>
                                 <span class="filter__txt">animaux autorisés</span>
                             </a>
                         </div>
-                        <p class="accommodation-search__filters__info">
-                            <span class="filters__info__icon"><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette
-                            ville
+                        <p class="accommodation-search__filters__info flex">
+                            <span class="filters__info__icon flex flex-center-item"><i class="fas fa-info"></i></span>Plus de 500 logements sont
+                            disponibles dans cette ville
                         </p>
                     </div>
                 </section>
                 <!-- Section 2 - Hosting results -->
                 <section id="accommodation" class="accommodation-results row">
-                    <div class="accommodation-list col-12 col-xl-8">
+                    <div class="accommodation-list flex rounded-item col-12 col-xl-8">
                         <h2 class="accommodation-list__title">Hébergements à Marseille</h2>
-                        <article class="accommodation col-12 col-md-6 col-lg-6 col-xxl-4">
-                            <a href="#">
-                                <figure class="accommodation__img">
-                                    <img src="img/accomodations/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière - Marseille" />
+                        <article class="accommodation rounded-item shadow-item col-12 col-md-6 col-lg-6 col-xxl-4">
+                            <a href="#" class="flex">
+                                <figure class="accommodation__img flex flex-center-item rounded-top-item">
+                                    <img
+                                        src="img/accomodations/auberge-la-cannebiere.jpg"
+                                        class="zoom-hover-effect rounded-top-item"
+                                        alt="Auberge la Cannebière - Marseille"
+                                    />
                                 </figure>
-                                <div class="accommodation__info col-8">
+                                <div class="accommodation__info flex rounded-bottom-item col-8">
                                     <h3 class="accommodation__info__title">Auberge la Cannebière</h3>
                                     <p class="accommodation__info__night-price">Nuit à partir de 25€</p>
                                     <div class="accommodation__info__star-list">
@@ -143,12 +147,16 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="accommodation col-12 col-md-6 col-lg-6 col-xxl-4">
-                            <a href="#">
-                                <figure class="accommodation__img">
-                                    <img src="img/accomodations/hotel-du-port.jpg" alt="Hôtel du port - Marseille" />
+                        <article class="accommodation rounded-item shadow-item col-12 col-md-6 col-lg-6 col-xxl-4">
+                            <a href="#" class="flex">
+                                <figure class="accommodation__img flex flex-center-item rounded-top-item">
+                                    <img
+                                        src="img/accomodations/hotel-du-port.jpg"
+                                        class="zoom-hover-effect rounded-top-item"
+                                        alt="Hôtel du port - Marseille"
+                                    />
                                 </figure>
-                                <div class="accommodation__info col-8">
+                                <div class="accommodation__info flex rounded-bottom-item col-8">
                                     <h3 class="accommodation__info__title">Hôtel du port</h3>
                                     <p class="accommodation__info__night-price">Nuit à partir de 52€</p>
                                     <div class="accommodation__info__star-list">
@@ -161,12 +169,16 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="accommodation col-12 col-md-6 col-lg-6 col-xxl-4">
-                            <a href="#">
-                                <figure class="accommodation__img">
-                                    <img src="img/accomodations/hotel-les-mouettes.jpg" alt="Hôtel Les mouettes - Marseille" />
+                        <article class="accommodation rounded-item shadow-item col-12 col-md-6 col-lg-6 col-xxl-4">
+                            <a href="#" class="flex">
+                                <figure class="accommodation__img flex flex-center-item rounded-top-item">
+                                    <img
+                                        src="img/accomodations/hotel-les-mouettes.jpg"
+                                        class="zoom-hover-effect rounded-top-item"
+                                        alt="Hôtel Les mouettes - Marseille"
+                                    />
                                 </figure>
-                                <div class="accommodation__info col-8">
+                                <div class="accommodation__info flex rounded-bottom-item col-8">
                                     <h3 class="accommodation__info__title">Hôtel Les mouettes</h3>
                                     <p class="accommodation__info__night-price">Nuit à partir de 76€</p>
                                     <div class="accommodation__info__star-list">
@@ -179,12 +191,16 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="accommodation col-12 col-md-6 col-lg-6 col-xxl-4">
-                            <a href="#">
-                                <figure class="accommodation__img">
-                                    <img src="img/accomodations/hotel-de-la-mer.jpg" alt="Hôtel de la mer - Marseille" />
+                        <article class="accommodation rounded-item shadow-item col-12 col-md-6 col-lg-6 col-xxl-4">
+                            <a href="#" class="flex">
+                                <figure class="accommodation__img flex flex-center-item rounded-top-item">
+                                    <img
+                                        src="img/accomodations/hotel-de-la-mer.jpg"
+                                        class="zoom-hover-effect rounded-top-item"
+                                        alt="Hôtel de la mer - Marseille"
+                                    />
                                 </figure>
-                                <div class="accommodation__info col-8">
+                                <div class="accommodation__info flex rounded-bottom-item col-8">
                                     <h3 class="accommodation__info__title">Hôtel de la mer</h3>
                                     <p class="accommodation__info__night-price">Nuit à partir de 46€</p>
                                     <div class="accommodation__info__star-list">
@@ -197,12 +213,16 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="accommodation col-12 col-md-6 col-lg-6 col-xxl-4">
-                            <a href="#">
-                                <figure class="accommodation__img">
-                                    <img src="img/accomodations/auberge-le-panier.jpg" alt="Auberge Le Panier - Marseille" />
+                        <article class="accommodation rounded-item shadow-item col-12 col-md-6 col-lg-6 col-xxl-4">
+                            <a href="#" class="flex">
+                                <figure class="accommodation__img flex flex-center-item rounded-top-item">
+                                    <img
+                                        src="img/accomodations/auberge-le-panier.jpg"
+                                        class="zoom-hover-effect rounded-top-item"
+                                        alt="Auberge Le Panier - Marseille"
+                                    />
                                 </figure>
-                                <div class="accommodation__info col-8">
+                                <div class="accommodation__info flex rounded-bottom-item col-8">
                                     <h3 class="accommodation__info__title">Auberge Le Panier</h3>
                                     <p class="accommodation__info__night-price">Nuit à partir de 23€</p>
                                     <div class="accommodation__info__star-list">
@@ -215,12 +235,16 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="accommodation col-12 col-md-6 col-lg-6 col-xxl-4">
-                            <a href="#">
-                                <figure class="accommodation__img">
-                                    <img src="img/accomodations/hotel-chez-amina.jpg" alt="Hôtel Chez Amina - Marseille" />
+                        <article class="accommodation rounded-item shadow-item col-12 col-md-6 col-lg-6 col-xxl-4">
+                            <a href="#" class="flex">
+                                <figure class="accommodation__img flex flex-center-item rounded-top-item">
+                                    <img
+                                        src="img/accomodations/hotel-chez-amina.jpg"
+                                        class="zoom-hover-effect rounded-top-item"
+                                        alt="Hôtel Chez Amina - Marseille"
+                                    />
                                 </figure>
-                                <div class="accommodation__info col-8">
+                                <div class="accommodation__info flex rounded-bottom-item col-8">
                                     <h3 class="accommodation__info__title">Hôtel Chez Amina</h3>
                                     <p class="accommodation__info__night-price">Nuit à partir de 96€</p>
                                     <div class="accommodation__info__star-list">
@@ -237,14 +261,18 @@
                             <a href="#">Afficher plus</a>
                         </p>
                     </div>
-                    <div class="accommodation-popular col-12 col-xl-4">
-                        <h3 class="accommodation-popular__title"><span>Les plus populaires</span> <i class="fas fa-chart-line"></i></h3>
-                        <article class="popular-item col-12 col-md-8 col-lg-4 col-xl-12">
-                            <a href="#">
-                                <figure class="popular-item__img col-5">
-                                    <img src="img/accomodations/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin - Chambre" />
+                    <div class="accommodation-popular flex col-12 col-xl-4">
+                        <h3 class="accommodation-popular__title flex"><span>Les plus populaires</span> <i class="fas fa-chart-line"></i></h3>
+                        <article class="popular-item shadow-item col-12 col-md-8 col-lg-4 col-xl-12">
+                            <a href="#" class="flex">
+                                <figure class="popular-item__img flex flex-center-item rounded-left-item col-5">
+                                    <img
+                                        src="img/accomodations/hotel-le-soleil-du-matin.jpg"
+                                        class="zoom-hover-effect"
+                                        alt="Hôtel Le soleil du matin - Chambre"
+                                    />
                                 </figure>
-                                <div class="popular-item__info col-7">
+                                <div class="popular-item__info flex col-7">
                                     <h4 class="popular-item__info__title">Hôtel Le soleil du matin</h4>
                                     <p class="popular-item__info__night-price">Nuit à partir de 128€</p>
                                     <div class="popular-item__info__star-list">
@@ -257,12 +285,16 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="popular-item col-12 col-md-8 col-lg-4 col-xl-12">
-                            <a href="#">
-                                <figure class="popular-item__img col-5">
-                                    <img src="img/accomodations/au-coeur-de-l-eau-chambres-d-hotes.jpg" alt="Au coeur de l'eau - Chambres d'hôtes" />
+                        <article class="popular-item shadow-item col-12 col-md-8 col-lg-4 col-xl-12">
+                            <a href="#" class="flex">
+                                <figure class="popular-item__img flex flex-center-item rounded-left-item col-5">
+                                    <img
+                                        src="img/accomodations/au-coeur-de-l-eau-chambres-d-hotes.jpg"
+                                        class="zoom-hover-effect"
+                                        alt="Au coeur de l'eau - Chambres d'hôtes"
+                                    />
                                 </figure>
-                                <div class="popular-item__info col-7">
+                                <div class="popular-item__info flex col-7">
                                     <h4 class="popular-item__info__title">Au coeur de l'eau Chambres d'hôtes</h4>
                                     <p class="popular-item__info__night-price">Nuit à partir de 71€</p>
                                     <div class="popular-item__info__star-list">
@@ -275,12 +307,16 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="popular-item col-12 col-md-8 col-lg-4 col-xl-12">
-                            <a href="#">
-                                <figure class="popular-item__img col-5">
-                                    <img src="img/accomodations/hotel-tout-bleu-et-blanc.jpg" alt="Hôtel Tout bleu et Blanc" />
+                        <article class="popular-item shadow-item col-12 col-md-8 col-lg-4 col-xl-12">
+                            <a href="#" class="flex">
+                                <figure class="popular-item__img flex flex-center-item rounded-left-item col-5">
+                                    <img
+                                        src="img/accomodations/hotel-tout-bleu-et-blanc.jpg"
+                                        class="zoom-hover-effect"
+                                        alt="Hôtel Tout bleu et Blanc"
+                                    />
                                 </figure>
-                                <div class="popular-item__info col-7">
+                                <div class="popular-item__info flex col-7">
                                     <h4 class="popular-item__info__title">Hôtel Tout Bleu et Blanc</h4>
                                     <p class="popular-item__info__night-price">Nuit à partir de 68€</p>
                                     <div class="popular-item__info__star-list">
@@ -298,53 +334,61 @@
                 <!-- Section 3 - Featured Content - Related Activities -->
                 <section id="activities" class="related-activities">
                     <h3>Activités à Marseille</h3>
-                    <div class="row related-activities_grid">
-                        <article class="activity">
-                            <a href="#">
-                                <figure class="activity__img">
-                                    <img src="img/activities/vieux-port.jpg" alt="Vieux Port de Marseille" />
+                    <div class="grid row related-activities_grid">
+                        <article class="activity shadow-item rounded-item">
+                            <a href="#" class="block">
+                                <figure class="activity__img flex flex-center-item rounded-top-item">
+                                    <img src="img/activities/vieux-port.jpg" class="zoom-hover-effect" alt="Vieux Port de Marseille" />
                                 </figure>
-                                <h4 class="activity__title">Vieux Port</h4>
+                                <h4 class="activity__title rounded-bottom-item">Vieux Port</h4>
                             </a>
                         </article>
-                        <article class="activity">
-                            <a href="#">
-                                <figure class="activity__img">
-                                    <img src="img/activities/fort-de-pomegues.jpg" alt="Fort de Pomègues de Marseille" />
+                        <article class="activity shadow-item rounded-item">
+                            <a href="#" class="block">
+                                <figure class="activity__img flex flex-center-item rounded-top-item">
+                                    <img src="img/activities/fort-de-pomegues.jpg" class="zoom-hover-effect" alt="Fort de Pomègues de Marseille" />
                                 </figure>
-                                <h4 class="activity__title">Fort de Pomègues</h4>
+                                <h4 class="activity__title rounded-bottom-item">Fort de Pomègues</h4>
                             </a>
                         </article>
-                        <article class="activity">
-                            <a href="#">
-                                <figure class="activity__img">
-                                    <img src="img/activities/ile-du-frioul.jpg" alt="Îles du Frioul de Marseille" />
+                        <article class="activity shadow-item rounded-item">
+                            <a href="#" class="block">
+                                <figure class="activity__img flex flex-center-item rounded-top-item">
+                                    <img src="img/activities/ile-du-frioul.jpg" class="zoom-hover-effect" alt="Îles du Frioul de Marseille" />
                                 </figure>
-                                <h4 class="activity__title">Îles du Frioul</h4>
+                                <h4 class="activity__title rounded-bottom-item">Îles du Frioul</h4>
                             </a>
                         </article>
-                        <article class="activity">
-                            <a href="#">
-                                <figure class="activity__img">
-                                    <img src="img/activities/parc-national-des-calanques.jpg" alt="Parc National des Calanques de Marseille" />
+                        <article class="activity shadow-item rounded-item">
+                            <a href="#" class="block">
+                                <figure class="activity__img flex flex-center-item rounded-top-item">
+                                    <img
+                                        src="img/activities/parc-national-des-calanques.jpg"
+                                        class="zoom-hover-effect"
+                                        alt="Parc National des Calanques de Marseille"
+                                    />
                                 </figure>
-                                <h4 class="activity__title">Parc National des Calanques</h4>
+                                <h4 class="activity__title rounded-bottom-item">Parc National des Calanques</h4>
                             </a>
                         </article>
-                        <article class="activity">
-                            <a href="#">
-                                <figure class="activity__img">
-                                    <img src="img/activities/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde de Marseille" />
+                        <article class="activity shadow-item rounded-item">
+                            <a href="#" class="block">
+                                <figure class="activity__img flex flex-center-item rounded-top-item">
+                                    <img
+                                        src="img/activities/notre-dame-de-la-garde.jpg"
+                                        class="zoom-hover-effect"
+                                        alt="Notre-Dame-de-la-Garde de Marseille"
+                                    />
                                 </figure>
-                                <h4 class="activity__title">Notre-Dame-de-la-Garde</h4>
+                                <h4 class="activity__title rounded-bottom-item">Notre-Dame-de-la-Garde</h4>
                             </a>
                         </article>
-                        <article class="activity">
-                            <a href="#">
-                                <figure class="activity__img">
-                                    <img src="img/activities/parc-longchamp.jpg" alt="Parc Longchamp de Marseille" />
+                        <article class="activity shadow-item rounded-item">
+                            <a href="#" class="block">
+                                <figure class="activity__img flex flex-center-item rounded-top-item">
+                                    <img src="img/activities/parc-longchamp.jpg" class="zoom-hover-effect" alt="Parc Longchamp de Marseille" />
                                 </figure>
-                                <h4 class="activity__title">Parc Longchamp</h4>
+                                <h4 class="activity__title rounded-bottom-item">Parc Longchamp</h4>
                             </a>
                         </article>
                     </div>
@@ -353,9 +397,9 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer fullwidth-wrapper">
-            <div class="footer_content wrapper">
-                <div class="footer__column col-12 col-md-6 col-lg-4">
+        <footer class="footer fullwidth-wrapper flex">
+            <div class="footer_content flex wrapper">
+                <div class="footer__column flex col-12 col-md-6 col-lg-4">
                     <h5 class="footer__title">À propos</h5>
                     <ul class="footer__list">
                         <li class="footer__list-item">
@@ -369,7 +413,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__column col-12 col-md-6 col-lg-4">
+                <div class="footer__column flex col-12 col-md-6 col-lg-4">
                     <h5 class="footer__title">Nos hébergements</h5>
                     <ul class="footer__list">
                         <li class="footer__list-item">
@@ -380,7 +424,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__column col-12 col-md-6 col-lg-4">
+                <div class="footer__column flex col-12 col-md-6 col-lg-4">
                     <h5 class="footer__title">Assistance</h5>
                     <ul class="footer__list">
                         <li class="footer__list-item">

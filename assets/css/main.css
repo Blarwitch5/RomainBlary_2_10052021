@@ -15,22 +15,18 @@
 
 /*****  ||  FORM STYLE  ||  *****/
 .accommodation-search__city-searchform {
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     max-width: 26.25rem;
 }
 .accommodation-search__city-searchform .city-searchform__btn,
 .accommodation-search__city-searchform .searchform__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 3.125rem;
 }
 .accommodation-search__city-searchform .searchform__icon {
     background-color: #f2f2f2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 0.938rem;
+    border-bottom-left-radius: 0.938rem;
 }
 .accommodation-search__city-searchform .searchform__icon svg,
 .accommodation-search__city-searchform .city-searchform__btn svg {
@@ -59,7 +55,6 @@
 }
 /*****  ||  FILTERS STYLE  ||  *****/
 .accommodation-search__filters {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -71,7 +66,6 @@
 .accommodation-search__filters .accommodation-search__filters__info {
     width: 100%;
     margin: 1.875em 0 0.625rem 0;
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: flex-start;
@@ -79,12 +73,9 @@
 .accommodation-search__filters .accommodation-search__filters__info .filters__info__icon {
     background-color: transparent;
     border: 1px solid #f2f2f2;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     width: 1.563rem;
     height: 1.563rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #0065fc;
     font-size: 0.75rem;
     margin-right: 0.938rem;
@@ -95,20 +86,13 @@
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
-    border-radius: 1.563rem;
     margin: 0.313rem 0.625rem 0.313rem 0;
-    display: flex;
     outline: none;
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
 }
-.accommodation-search__filters .filter a {
-    text-decoration: none;
-    color: #000;
-    display: block;
-    cursor: pointer;
-}
+
 .accommodation-search__filters .filter::before {
     position: absolute;
     border: 3px solid #f2f2f2;
@@ -128,9 +112,6 @@
     border-radius: 50%;
     height: 3.125rem;
     width: 3.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -141,9 +122,7 @@
     font-weight: 600;
     text-transform: capitalize;
 }
-.accommodation-search__filters .filter a:hover .filter__txt {
-    color: #0065fc;
-}
+
 /* =============================================
    END SECTION 1 - Search form & Filters 
    ============================================= */
@@ -163,7 +142,6 @@
 }
 /*****  ||  ACCOMMODATION LIST  ||  *****/
 .accommodation-results .accommodation-list {
-    display: flex;
     flex-direction: column;
     order: 2;
     padding-top: 0;
@@ -177,20 +155,14 @@
 .accommodation-results .accommodation-list .accommodation {
     background-color: #fff;
     max-height: 13.125rem;
-    border-radius: 1.563em;
     padding: 0.313rem;
     margin-bottom: 0.625rem;
-    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
 }
 .accommodation-results .accommodation-list .accommodation a {
-    display: flex;
     flex-direction: column;
-    text-decoration: none;
     color: black;
 }
-.accommodation-results .accommodation-list .accommodation__info .accommodation__info__title{
+.accommodation-results .accommodation-list .accommodation__info .accommodation__info__title {
     font-size: 1rem;
 }
 .accommodation-results .accommodation-list .accommodation a .accommodation__img {
@@ -198,54 +170,28 @@
     padding: 0;
     background: #fff;
     overflow: hidden;
-    border-top-left-radius: 1.563em;
-    border-top-right-radius: 1.563em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     /***** Safari hack for hover border-radius *****/
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
-.accommodation-results .accommodation-list .accommodation a .accommodation__img img {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1); /* IE 9 */
-    transform: scale(1.1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    object-fit: cover;
-    width: 100%;
-    border-top-left-radius: 1.563em;
-    border-top-right-radius: 1.563em;
-}
-.accommodation-results .accommodation-list .accommodation a:hover .accommodation__img img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    border-top-left-radius: 1.563em;
-    border-top-right-radius: 1.563em;
-}
+
 .accommodation-results .accommodation-list .accommodation a .accommodation__info {
     position: relative;
     bottom: 0.625rem;
     width: 100%;
     background: white;
     padding: 0.625rem;
-    display: flex;
     flex-direction: column;
     height: auto;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
 }
 /*****  ||  POPULAR ACCOMMODATION LIST  ||  *****/
 .accommodation-results .accommodation-popular {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     order: 1;
     background-color: #f2f2f2;
 }
 .accommodation-results .accommodation-popular .accommodation-popular__title {
-    display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-top: 0.875rem;
@@ -263,14 +209,9 @@
     border-radius: 1.563em;
     padding: 0.313rem;
     margin-bottom: 0.625rem;
-    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
 }
 .accommodation-popular .popular-item a {
-    display: flex;
     flex-direction: row;
-    text-decoration: none;
     height: 100%;
 }
 .accommodation-popular .popular-item a .popular-item__img {
@@ -278,34 +219,14 @@
     padding: 0;
     background: #fff;
     overflow: hidden;
-    border-top-left-radius: 1.563em;
-    border-bottom-left-radius: 1.563em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     /***** Safari hack for hover border-radius*****/
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
-.accommodation-popular .popular-item a .popular-item__img img {
-    height: 100%;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1); /* IE 9 */
-    transform: scale(1.1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    object-fit: cover;
-    width: 100%;
-}
-.accommodation-popular .popular-item a:hover .popular-item__img img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
+
 .accommodation-popular .popular-item a .popular-item__info {
-    display: flex;
     flex-direction: column;
     padding: 0.625rem 1.25rem;
-    color: #000;
 }
 
 .accommodation-popular .popular-item a .popular-item__info .popular-item__info__title {
@@ -314,6 +235,7 @@
 .accommodation-popular .popular-item a .popular-item__info .popular-item__info__night-price,
 .accommodation-results .accommodation-list .accommodation a .accommodation__info .accommodation__info__night-price {
     flex-grow: 1;
+    color: #000;
 }
 /* =============================================
    END SECTION 2 - Hosting results 
@@ -337,15 +259,9 @@
 }
 .related-activities .activity {
     width: 100%;
-    border-radius: 1.563rem;
-    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
 }
 .related-activities .activity a {
-    display: block;
     width: 100%;
-    text-decoration: none;
 }
 
 .related-activities .activity a .activity__img {
@@ -354,36 +270,16 @@
     padding: 0;
     background: #fff;
     overflow: hidden;
-    border-top-left-radius: 1.563em;
-    border-top-right-radius: 1.563em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     /***** Safari hack for hover border-radius *****/
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
-.related-activities .activity a .activity__img img {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.related-activities .activity a:hover .activity__img img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
+
 .related-activities .activity a .activity__title {
-    color: #000;
     background-color: #fff;
     padding-left: 1.25rem;
     padding-top: 0.313rem;
     line-height: 3.125rem;
-    border-bottom-left-radius: 1.563em;
-    border-bottom-right-radius: 1.563em;
 }
 /* =============================================
    END SECTION 3 - activities 
@@ -424,7 +320,7 @@
         padding: 1.25rem;
     }
     .accommodation-results .accommodation-popular {
-        border-radius: 1.563em;
+        border-radius: 1.563rem;
     }
     .accommodation-results .accommodation-popular .popular-item:nth-child(3) {
         margin-left: auto;
@@ -437,11 +333,8 @@
 
     /***** SECTION 3 - Activities *****/
     .related-activities_grid {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(18, 1fr);
-        grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
     }
 
     .activity:first-child {
@@ -537,11 +430,8 @@
 
     /***** SECTION 3 - Activities *****/
     .related-activities_grid {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(9, 1fr);
-        grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
         max-height: 28.125rem;
     }
     .related-activities_grid .activity {
@@ -598,13 +488,6 @@
 /* =============================================
    COMMUN STYLE 
    ============================================= */
-article {
-    min-width: 13.625rem;
-}
-article a {
-    transition: all 0.3s;
-    cursor: pointer;
-}
 #accommodation,
 #activities {
     overflow-y: scroll;
