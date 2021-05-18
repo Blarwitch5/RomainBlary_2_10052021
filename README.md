@@ -27,7 +27,7 @@ Réalisation d'un prototype de site basé sur des maquettes graphiques (voir la 
 * Pas de framework ou pré-compilateur CSS pour ce projet
 * Recommandation : utilisation de [VisualStudia Code](https://code.visualstudio.com/) avec [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServerLive) ou [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 * Utilisation de balises sémantiques
-* [Le code doit être valide W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fblarwitch5.github.io%2FRomainBlary_2_10052021)
+* [Le code doit être valide W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fblarwitch5.github.io%2FRomainBlary_2_10052021)
 * Le code doit être versionné avec git et disponible dans un repo sur [GitHub](https://github.com/Blarwitch5/RomainBlary_2_10052021)
 * Le site devra être compatible avec les dernières versions de Chrome et Firefox.
 * Le HTML et le CSS doivent être séparés et organisés
