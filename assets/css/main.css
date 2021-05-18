@@ -82,11 +82,7 @@
   padding: 0 10px;
 }
 .search-box__filters .filter {
-  background: linear-gradient(
-    to right,
-    rgba(222, 235, 255, 1) 50%,
-    rgba(222, 235, 255, 0) 50%
-  );
+  background: linear-gradient(to right, rgba(222, 235, 255, 1) 50%, rgba(222, 235, 255, 0) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -160,16 +156,13 @@
   background-color: #fff;
   max-height: 13.125rem;
   padding: 0.313rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 2rem;
 }
 .accommodations .accommodations-list .accommodation a {
   flex-direction: column;
   color: black;
 }
-.accommodations
-  .accommodations-list
-  .accommodation__info
-  .accommodation__info__title {
+.accommodations .accommodations-list .accommodation__info .accommodation__info__title {
   font-size: 1rem;
 }
 .accommodations .accommodations-list .accommodation a .accommodation__img {
@@ -215,7 +208,7 @@
   height: 9.063rem;
   border-radius: 1.563em;
   padding: 0.313rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 2rem;
 }
 .accommodations-popular .popular-item a {
   flex-direction: row;
@@ -236,24 +229,11 @@
   padding: 0.625rem 1.25rem;
 }
 
-.accommodations-popular
-  .popular-item
-  a
-  .popular-item__info
-  .popular-item__info__title {
+.accommodations-popular .popular-item a .popular-item__info .popular-item__info__title {
   padding-bottom: 0.313rem;
 }
-.accommodations-popular
-  .popular-item
-  a
-  .popular-item__info
-  .popular-item__info__night-price,
-.accommodations
-  .accommodations-list
-  .accommodation
-  a
-  .accommodation__info
-  .accommodation__info__night-price {
+.accommodations-popular .popular-item a .popular-item__info .popular-item__info__night-price,
+.accommodations .accommodations-list .accommodation a .accommodation__info .accommodation__info__night-price {
   flex-grow: 1;
   color: #000;
 }
@@ -526,18 +506,9 @@
 #activities {
   overflow-y: scroll;
 }
-.accommodations-popular
-  .popular-item
-  a:hover
-  .popular-item__info
-  .popular-item__info__title,
+.accommodations-popular .popular-item a:hover .popular-item__info .popular-item__info__title,
 .related-activities .activity a:hover .activity__title,
-.accommodations
-  .accommodations-list
-  .accommodation
-  a:hover
-  .accommodation__info
-  .accommodation__info__title {
+.accommodations .accommodations-list .accommodation a:hover .accommodation__info .accommodation__info__title {
   color: #0065fc;
 }
 .show-more {
@@ -568,6 +539,6 @@
   color: #deebff;
 }
 
-.euro-sign{
-    font-weight: 600;
+.euro-sign {
+  font-weight: 600;
 }
