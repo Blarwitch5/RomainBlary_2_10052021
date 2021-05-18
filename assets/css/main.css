@@ -567,3 +567,7 @@
 .star-gray:hover {
   color: #deebff;
 }
+
+.euro-sign{
+    font-weight: 600;
+}
