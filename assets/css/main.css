@@ -288,7 +288,7 @@
    RESPONSIVE
    ============================================= */
 /*------ Small devices less than 576px ------*/
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
   .popular-item__info {
     padding: 0.625rem 0.5rem 0.635rem 1.25rem !important;
   }
@@ -303,7 +303,7 @@
   }
 }
 /*------ Tablet version 768px to 992px ------*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   /***** SECTION 1 - Search *****/
   .search-box__searchform .searchform__btn {
     width: auto;
@@ -388,7 +388,7 @@
   /***** END SECTION 3 *****/
 }
 /*------ Desktop version 992px and above ------*/
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   /***** SECTION 1 - Search *****/
   .search-box__filters .filters-title {
     width: unset;
@@ -419,7 +419,7 @@
   /***** END SECTION 3 *****/
 }
 /*------ Desktop version 1200px and above ------*/
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   /***** SECTION 1 - Search *****/
   /***** END SECTION 1 *****/
 
@@ -484,7 +484,7 @@
   /***** END SECTION 3 *****/
 }
 /*------ Desktop version 1400px and up ------*/
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   /***** SECTION 1 - Search *****/
   /***** END SECTION 1 *****/
 

@@ -72,7 +72,7 @@
   color: #0065fc;
 }
 /*------ Tablet version 768px to 1024px ------*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navbar {
     flex-wrap: nowrap;
   }
@@ -123,7 +123,7 @@
   }
 }
 /*------ Desktop version 1024px and above ------*/
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .navbar__list .navbar__list-item {
     margin: 0 1.25rem;
   }
@@ -171,7 +171,7 @@ footer .footer__column .footer__list .footer__list-item {
 }
 
 /*------ Tablet & Desktop version 768px and above ------*/
-@media (max-width: 1339.98px) {
+@media screen and (max-width: 1339.98px) {
   footer {
     margin: unset;
     padding-left: unset;
