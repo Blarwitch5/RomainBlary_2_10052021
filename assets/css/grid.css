@@ -22,29 +22,29 @@
   margin-left: auto;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 36rem) {
   .wrapper {
-    max-width: 540px;
+    max-width: 33.75rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .wrapper {
-    max-width: 720px;
+    max-width: 45rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   .wrapper {
-    max-width: 960px;
+    max-width: 60rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75rem) {
   .wrapper {
-    max-width: 1140px;
+    max-width: 71.25rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 87.5rem) {
   .wrapper {
-    max-width: 1320px;
+    max-width: 82.5rem;
   }
 }
 
@@ -53,11 +53,11 @@
 		----- RESPONSIVE -----
 
 		Brekpoints
-		sm: 576px,
-		md: 768px,
-		lg: 992px,
-		xl: 1200px
-		xxl: 1400px
+		sm: 36rem,
+		md: 48rem,
+		lg: 62rem,
+		xl: 75rem,
+		xxl: 87.5rem
 */
 /*#########################################################*/
 .col-1 {
@@ -96,8 +96,8 @@
 .col-12 {
   width: 100%;
 }
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
+/* Small devices (landscape phones, 36rem and up) */
+@media screen and (min-width: 36rem) {
   .col-sm-1 {
     width: calc(1 / 12 * 100% - 1rem);
   }
@@ -135,8 +135,8 @@
     width: 100%;
   }
 }
-/*Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
+/*Medium devices (tablets, 48rem and up) */
+@media screen and (min-width: 48rem) {
   .col-md-1 {
     width: calc(1 / 12 * 100% - 1rem);
   }
@@ -174,8 +174,8 @@
     width: 100%;
   }
 }
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
+/* Large devices (desktops, 62rem and up) */
+@media screen and (min-width: 62rem) {
   .col-lg-1 {
     width: calc(1 / 12 * 100% - 1rem);
   }
@@ -214,8 +214,8 @@
   }
 }
 
-/* X-Large devices (desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
+/* X-Large devices (desktops, 75rem and up) */
+@media screen and (min-width: 75rem) {
   .col-xl-1 {
     width: calc(1 / 12 * 100% - 1rem);
   }
@@ -253,8 +253,8 @@
     width: 100%;
   }
 }
-/* XX-Large devices (desktops, 1400px and up) */
-@media screen and (min-width: 1400px) {
+/* XX-Large devices (desktops, 87.5rem and up) */
+@media screen and (min-width: 87.5rem) {
   .col-xxl-1 {
     width: calc(1 / 12 * 100% - 1rem);
   }

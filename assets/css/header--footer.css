@@ -38,7 +38,7 @@
   transition: 0.3s;
 }
 /* .navbar .navbar__subscription-link a:hover {
-    border-bottom: 3px solid #deebff;
+    border-bottom: 0.188rem solid #deebff;
 } */
 
 .navbar .navbar__list {
@@ -52,11 +52,11 @@
 }
 .navbar .navbar__list .navbar__list-item {
   width: 50%;
-  border-bottom: 3px solid #f2f2f2;
+  border-bottom: 0.188rem solid #f2f2f2;
   line-height: 3.125em;
 }
 .navbar .navbar__list .navbar__list-item:hover {
-  border-bottom: 3px solid #deebff;
+  border-bottom: 0.188rem solid #deebff;
 }
 .navbar .navbar__list .navbar__list-item a {
   font-weight: 400;
@@ -66,13 +66,13 @@
   font-weight: 400;
 }
 .navbar .navbar__list .navbar__list-item--active {
-  border-bottom: 3px solid #0065fc;
+  border-bottom: 0.188rem solid #0065fc;
 }
 .navbar .navbar__list .navbar__list-item--active a {
   color: #0065fc;
 }
-/*------ Tablet version 768px to 1024px ------*/
-@media screen and (min-width: 768px) {
+/*------ Tablet version 48rem ------*/
+@media screen and (min-width: 48rem) {
   .navbar {
     flex-wrap: nowrap;
   }
@@ -108,7 +108,7 @@
   .navbar__subscription-link::before {
     content: "";
     background-color: transparent;
-    height: 3px;
+    height: 0.188rem;
     width: 100%;
     z-index: 1;
     position: absolute;
@@ -122,8 +122,8 @@
     order: 3;
   }
 }
-/*------ Desktop version 1024px and above ------*/
-@media screen and (min-width: 1024px) {
+/*------ Desktop version 62rem and above ------*/
+@media screen and (min-width: 62rem) {
   .navbar__list .navbar__list-item {
     margin: 0 1.25rem;
   }
@@ -170,8 +170,8 @@ footer .footer__column .footer__list .footer__list-item {
   line-height: 2.188rem;
 }
 
-/*------ Tablet & Desktop version 768px and above ------*/
-@media screen and (max-width: 1339.98px) {
+/*------ Tablet & Desktop version 48rem and above ------*/
+@media screen and (max-width: 83.749rem) {
   footer {
     margin: unset;
     padding-left: unset;

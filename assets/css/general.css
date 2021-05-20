@@ -111,9 +111,9 @@ article {
 }
 /***** item with drop shadow *****/
 .shadow-item {
-  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow:0 0.313rem 0.625rem 0.188rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:0 0.313rem 0.625rem 0.188rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:0 0.313rem 0.625rem 0.188rem rgba(0, 0, 0, 0.1);
 }
 /***** item with rounded corners *****/
 .rounded-item {
@@ -151,27 +151,27 @@ a:hover img.zoom-hover-effect {
 .hidden {
   display: none;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 36rem) {
   .sm-hidden {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .md-hidden {
     display: none;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   .lg-hidden {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75rem) {
   .xl-hidden {
     display: none;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 87.5rem) {
   .xxl-hidden {
     display: none;
   }
@@ -179,27 +179,27 @@ a:hover img.zoom-hover-effect {
 .block {
   display: block;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 36rem) {
   .sm-block {
     display: block;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .md-block {
     display: block;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   .lg-block {
     display: block;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75rem) {
   .xl-block {
     display: block;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 87.5rem) {
   .xxl-block {
     display: block;
   }
